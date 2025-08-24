@@ -1,19 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "./App.css";
-import MyStory from "./MyStory";
+import { Link } from "react-router-dom";
+import "./MyStory.css";
 
-function App() {
+function MyStory() {
   return (
-      <Router>
-      <Routes>
-        {/* Home page */}
-        <Route
-          path="/"
-          element={
-            <div className="container">
-              <nav className="navbar">
-                <h2 className="logo">Vivek Mahakur</h2>
+    <div className="container">
+      <nav className="navbar">
+                <h2 className="logo"><Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            Vivek Mahakur
+          </Link></h2>
         <ul className="nav-links">
 
           {/* LinkedIn */}
@@ -82,30 +77,44 @@ function App() {
         </ul>
       </nav>
 
-      <section className="hero">
-                <h1>Hi, I’m <span>Vivek Mahakur</span></h1>
-                <h3>"Developer by code, Artist by heart"</h3>
+      <section className="story-hero">
+        <h1>My Story</h1>
+        <p>
+          It all began in <span className="year">2018</span>, back in my 10th class. I wasn’t holding a laptop then—I was holding a pencil. Drawing faces fascinated me. At first, my sketches were terrible, but I kept watching tutorials, practicing daily, and slowly, the lines started making sense. Within a year, I was good enough to take paid portrait orders.
+        </p>
 
-                <p className="hero-description">
-                  I'm a Computer Science and Engineering student passionate about turning ideas into efficient digital solutions. 
-                  I enjoy building modern web apps with React & Django, sharpening my problem-solving skills through algorithms, 
-                  and exploring networking. Beyond tech, I’m also an artist who loves sketching portraits — a hobby that fuels my creativity.
-                </p>
+        <p>
+          Then came <span className="year">2021–2022</span>, my drop year after 12th. Life slowed down. No classes, no coding. Just me, paper, and a sense that something bigger was waiting.
+        </p>
 
-                {/* Link to My Story page */}
-                <p><Link to="/my-story">My story</Link></p>
-              </section>
+        <p>
+          When I finally joined college, everything changed. Suddenly, I was introduced to a new language—Java. At first, it felt like gibberish, but curiosity kept me going. I dabbled in DSA, stumbled through algorithms, and soon discovered the thrill of the web with HTML and CSS.
+        </p>
 
-              <footer className="footer">@2025 Vivek Mahakur</footer>
-            </div>
-          }
-        />
+        <p>
+          Then came JavaScript—making buttons respond, text change, pages come alive. By 3rd year, I had expanded into C and C++, even making small games: <br/>
+          <strong>Pong</strong> – my first game, bouncing a pixel ball endlessly.<br/>
+          <strong>Timber</strong> – the struggle of loops and events.<br/>
+          <strong>Zombie Arena</strong> – fun chaos with zombies and survival logic.
+        </p>
 
-        {/* My Story page */}
-        <Route path="/my-story" element={<MyStory />} />
-      </Routes>
-    </Router>
+        <p>
+          The real turning point came with Django. That step opened doors. Soon, we landed a startup project for a cosmetics and jewellery brand. Three of us, three laptops, endless errors, three months of sweat. In the end, we launched <a href="https://www.cocomatik.com/" target="blank">Cocomatik.com</a>. That moment felt like watching a child walk on its own.
+        </p>
+
+        <p>
+          During this time, my sketchbook gathered dust. For almost three years, I barely drew. After 3rd year, I picked up my pencils again. I realized I didn’t have to choose between coding and art—I could do both.
+        </p>
+
+        <p>
+          Today, I’m building web apps with the same excitement as sketching portraits—logic and creativity finally in balance. 
+        </p>
+        <p>And the story? Still being written...</p>
+      </section>
+
+      <footer className="footer">@2025 Vivek Mahakur</footer>
+    </div>
   );
 }
 
-export default App;
+export default MyStory;

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+.story-hero {
+  width: 70%;
+  max-width: 900px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.8;
+}
+
+.story-hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.story-hero p {
+  font-size: 1.15rem;
+  color: #fff;
+  text-align: justify;
+  text-indent: 1.5rem;
+  margin-bottom: 2rem;  /* adds consistent spacing between paragraphs */
+  line-height: 1.8;
+}
+
+.story-hero p span.year {
+  font-weight: 600;
+}
+
+.story-hero p::first-letter {
+  font-size: 1.8rem;  /* smaller than before */
+  font-weight: 700;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #3b82f6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .story-hero {
+    width: 90%;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .story-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .story-hero p {
+    font-size: 1rem;
+    text-indent: 1rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+  }
+
+  .story-hero p::first-letter {
+    font-size: 1.5rem;
+  }
+}
