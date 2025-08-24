@@ -41,10 +41,6 @@ a {
   color: #3b82f6;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .story-hero {
