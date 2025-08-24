@@ -91,9 +91,14 @@ function App() {
                   I enjoy building modern web apps with React & Django, sharpening my problem-solving skills through algorithms, 
                   and exploring networking. Beyond tech, I’m also an artist who loves sketching portraits — a hobby that fuels my creativity.
                 </p>
+                
 
                 {/* Link to My Story page */}
-                <p><Link to="/my-story">My story</Link></p>
+                <div className="ms">
+                <h1 >My Story</h1>
+                <p><Link to="/my-story">Here it is..</Link></p>
+
+                </div>
               </section>
 
               <footer className="footer">@2025 Vivek Mahakur</footer>
