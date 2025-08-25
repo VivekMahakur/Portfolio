@@ -97,6 +97,11 @@ function App() {
                 <div className="ms">
                 <h1 >My Story</h1>
                 <p><Link to="/my-story">Here it is..</Link></p>
+                <h1 >Projects</h1>
+                <h2 className="subT"><a href="https://www.cocomatik.com/">Cocomatik</a></h2>
+                <p>A full-stack web application for seamless e-commerce and inventory management, built with Django and JavaScript.</p>
+                <h2 className="subT"><a href="https://www.cocomatik.com/">Inventro</a></h2>
+                <p>A web app to track, manage, and organize stock effeciently, built with Django and JavaScript.</p>
 
                 </div>
               </section>

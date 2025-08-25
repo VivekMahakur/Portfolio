@@ -63,18 +63,27 @@ html, body {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #fff;
+  margin-bottom: 3rem;
+
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   color: #ccc;
+  margin-bottom: 5rem;
 }
 
 .ms{
   text-align: left;
 }
+.ms p{
+  padding-left: 5rem;
+}
 
+.subT{
+  font-size: 30px;
+}
 
 
 .footer {
